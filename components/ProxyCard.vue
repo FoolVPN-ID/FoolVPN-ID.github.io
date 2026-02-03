@@ -17,7 +17,7 @@ const isSelected = ref(false);
 async function checkProxyHealth() {
   stats.loading = true;
   try {
-    const res = await $fetch(`https://id1.foolvpn.me/api/v1/check?ip=${props.ipPort}`);
+    const res = await $fetch(`https://id1.foolvpn.web.id/api/v1/check?ip=${props.ipPort}`);
 
     const jsonValue = res as any;
     stats.proxyip = jsonValue.proxyip;
