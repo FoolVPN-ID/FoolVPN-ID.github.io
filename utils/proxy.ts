@@ -117,7 +117,7 @@ class ParseProxies {
   // clash or mihomo
   async toClash() {
     const proxies = this.toRaw();
-    const res = await fetch("https://api.foolvpn.me/convert", {
+    const res = await fetch("https://api.foolvpn.web.id/convert", {
       method: "post",
       body: JSON.stringify({
         url: proxies.split("\n").join(","),
@@ -131,7 +131,7 @@ class ParseProxies {
 
   async toSFA() {
     const proxies = this.toRaw();
-    const res = await fetch("https://api.foolvpn.me/convert", {
+    const res = await fetch("https://api.foolvpn.web.id/convert", {
       method: "post",
       body: JSON.stringify({
         url: proxies.split("\n").join(","),
@@ -145,7 +145,7 @@ class ParseProxies {
 
   async toBFR() {
     const proxies = this.toRaw();
-    const res = await fetch("https://api.foolvpn.me/convert", {
+    const res = await fetch("https://api.foolvpn.web.id/convert", {
       method: "post",
       body: JSON.stringify({
         url: proxies.split("\n").join(","),

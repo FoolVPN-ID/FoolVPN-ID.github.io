@@ -13,7 +13,7 @@ const serverList = ref<
   }>
 >([
   {
-    url: "id1.foolvpn.me",
+    url: "id1.foolvpn.web.id",
     ping: [],
     info: {},
     status: {},
@@ -21,7 +21,7 @@ const serverList = ref<
     errors: [],
   },
   {
-    url: "id2.foolvpn.me",
+    url: "id2.foolvpn.web.id",
     ping: [],
     info: {},
     status: {},
@@ -29,7 +29,7 @@ const serverList = ref<
     errors: [],
   },
   {
-    url: "sg1.foolvpn.me",
+    url: "sg1.foolvpn.web.id",
     ping: [],
     info: {},
     status: {},
@@ -37,7 +37,7 @@ const serverList = ref<
     errors: [],
   },
   {
-    url: "sg2.foolvpn.me",
+    url: "sg2.foolvpn.web.id",
     ping: [],
     info: {},
     status: {},
@@ -248,7 +248,7 @@ onMounted(async () => {
                     <div>
                       <progress
                         class="progress progress-secondary w-12"
-                        :value="server.ping.filter((data: any) => data.delay > 0 ).length"
+                        :value="server.ping.filter((data: any) => data.delay > 0).length"
                         :max="server.ping.length"
                       ></progress>
                     </div>
